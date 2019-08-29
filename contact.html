@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+  </head>
+
+  <body>
+    <header class="main-header flex">
+      <div class="logo-container">
+        <div class="logo">
+          <a src="index.html"><img src=""></a>
+        </div>
+      </div>
+      <div id="menu-button">
+        <div id="line-1"></div>
+        <div id="line-2"></div>
+        <div id="line-3"></div>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="shop.html">Shop</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="header-image header-image--contact"></div>
+
+      <div class="flex contact-container">
+        <section id="contact">
+          <div class="container">
+            <h1>Contact Us</h1>
+            <form name="htmlform" method="post" action="toyousender.php">
+              <input type="text" name="first_name" placeholder="NAME" required>
+              <input  type="email" name="email" placeholder="EMAIL" required>
+              <textarea name="comments" placeholder="MESSAGE" required ></textarea>
+              <button name="send" type="submit" class="submit">SEND</button>
+            </form>
+          </div>
+        </section>
+
+        <div class="map container">
+          <h1>Directions</h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.134284369717!2d-90.26756068487165!3d30.60197538168287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86276b741b131de3%3A0x441bcf79eec148dd!2s27261+A+Pierre+Rd%2C+Loranger%2C+LA+70446!5e0!3m2!1sen!2sus!4v1564505654260!5m2!1sen!2sus" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="flex">
+        <div class="left-spacer"></div>
+        <div class="quick-links flex">
+          <section class="flex">
+            <h3>Quick Links</h3>
+            <a href="facilities.html">Facilities</a>
+            <a href="services.html" alt"#boarding">Boarding</a>
+            <a href="services.html" alt"#lessons">Lessons</a>
+            <a href="about.html">Our Team</a>
+            <a href="#"></a>
+          </section>
+        </div>
+        <div class="quick-contact">
+          <h3>Contact Information</h3>
+          <p>Phone: (504) 555-1234<br>
+          Email: kathi@beautyway.com</p>
+          <p>27261 A Pierre Road<br>Folsom, LA 70123</p>
+        </div>
+        <div class="right-spacer"></div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+
+</html>

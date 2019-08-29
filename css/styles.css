@@ -1,0 +1,849 @@
+* {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+
+html {
+  background-color: #f9f9f7;
+  font-family: 'Roboto';
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.home-body {
+  overflow-y: hidden;
+}
+main {
+  background: #f9f9f7;
+  color: #968d65;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display';
+  text-transform: uppercase;
+}
+h1 {
+  margin: 10px 0;
+  font-size: 1.7em;
+  border-bottom: solid 3px #e0dabc;
+}
+h2 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+h1, h2 {
+  color: #616089;
+}
+h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: .4em 0;
+  letter-spacing: 1px;
+}
+p {
+  font-size: .9em;
+  font-weight: lighter;
+  line-height: 1.8;
+}
+
+
+
+
+
+.main-header {
+  background: #f2efe2;
+  top: 0;
+  justify-content: space-between;
+  border-bottom: 3px solid #e0dabc;
+}
+.logo {
+  right: 0;
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  background-color: #4f4c70;
+  border-radius: 50%;
+}
+.logo-container{
+  padding: 15px;
+}
+
+
+.slick-prev {
+  left: 25px;
+  z-index: 3;
+}
+.slick-next{
+  right: 25px;
+  z-index: 3;
+}
+.slick-list,
+.slick-slider {
+  max-height: 850px;
+}
+
+.background-cover {
+  max-height: 100vh;
+  background-color: #e0dabc;
+}
+.slide {
+  height: 100vh;
+  width: 100%;
+}
+.slide-1 div {
+  height: 100%;
+  background-image: url('../img/stoli-resize.jpg');
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: auto 520px;
+}
+.slide-2 div {
+  height: 100%;
+  background-image: url('../img/scooter-resize.jpg');
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: auto 520px;
+}
+.slide-3 div {
+  height: 100%;
+  background-image: url('../img/razen-resize.jpg');
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-size: auto 520px;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+
+
+
+
+
+
+#menu {
+  width: 80%;
+  margin: 0 auto;
+  background: #f2efe2;
+  padding: 25px 0;
+  color: #e0dabc;
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+#menu ul li:last-child a {
+  border: none;
+}
+#menu ul li {
+  margin: 0px;
+  padding: 10px 0px;
+  text-align: center;
+}
+#menu ul li a {
+  color: #968d65;
+  padding: 9px 30px;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: .4s ease;
+}
+#menu ul li a:hover {
+  color: #76739e;
+}
+#menu-button{
+  width: 70px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all linear .3s;
+  padding: 15px;
+  z-index: 6;
+  margin: auto 10px;
+}
+
+#menu-button.active{
+  /* background: #f2f2e6; */
+}
+#line-1,#line-2,#line-3{
+  width: 90%;
+  background: #c4c1a4;
+  height: 8px;
+  margin: 4px auto;
+  border-radius: 2px;
+  transition: all linear .3s;
+}
+#line-1.active{
+-webkit-transform: translate(0px,12px) rotate(45deg);
+transform: translate(0px,12px) rotate(45deg);
+}
+#line-2.active{
+opacity: 0;
+}
+#line-3.active{
+-webkit-transform: translate(0px, -12px) rotate(-45deg);
+transform: translate(0px, -12px) rotate(-45deg);
+}
+
+#menu ul{
+  list-style: none;
+}
+#menu ul li{
+  margin: 0;
+}
+
+
+
+
+
+
+
+footer {
+  display: none;
+  position: fixed;
+  color: #b5b4bd;
+  width: 100%;
+  background-color: #4f4c70;
+  bottom: 0;
+  padding: 0 10px;
+  border-top: 3px solid #616089;
+  font-size: .9em;
+}
+footer h3 {
+  color: white;
+}
+footer .flex div {
+  margin: 20px 0;
+  padding: 0 15px;
+}
+footer p {
+  margin: 7px 0;
+  line-height: 1.4;
+}
+
+
+.quick-links {
+  flex-direction: row-reverse;
+  flex: 1;
+  border-right: 2px solid #616089;
+}
+.quick-links section {
+  text-align: right;
+  flex-direction: column;
+}
+.quick-links section a {
+  font-weight: lighter;
+  text-decoration: none;
+  color: #dbdbdb;
+  line-height: 1.45;
+}
+.quick-links a:hover {
+  color: white;
+}
+.quick-contact {
+  border-left: 1px solid #616089;
+  flex: 1;
+}
+.left-spacer, .right-spacer {
+  display: none;
+}
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\
+    O T H E R   P A G E S
+/////////////////////////// */
+
+.header-image {
+  margin: 0 0 1em 0;
+  border-bottom: 3px solid #e0dabc;
+}
+.header-image--facilities {
+  width: 100%;
+  min-width: 415px;
+  height: 175px;
+  background-image: url('../img/facilities-photo.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header-image--services {
+  width: 100%;
+  min-width: 415px;
+  height: 175px;
+  background-image: url('../img/barn-aisle-fullscreen.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header-image--about {
+  width: 100%;
+  min-width: 415px;
+  height: 175px;
+  background-image: url('../img/barn-driveway.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header-image--contact {
+  width: 100%;
+  min-width: 415px;
+  height: 175px;
+  background-image: url('../img/flower-driveway.jpg');
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.intro {
+  flex: 1;
+  padding: 10px;
+}
+.intro h1 {
+}
+.page-container {
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.amenities {
+  background-color: #f2efe2;
+  border-radius: 15px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 550px;
+}
+.amenities ul {
+  list-style-type: none;
+  font-size: .9em;
+  margin: 0px;
+  padding: 0 5px;
+  line-height: 1.6;
+}
+.amenities h3 {
+  text-align: center;
+}
+.facilities-img {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  max-width: 530px;
+  margin: 10px auto;
+}
+.facilities-img div {
+  background-color: tan;
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.services-container {
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+.services-container h2 {
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+}
+#lessons,
+#boarding {
+  flex: 1;
+  width: 100%;
+  padding: 40px 0;
+}
+.lessons-img,
+.boarding-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.lessons-img {
+  background-image: url(../img/lessons-img.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.boarding-img {
+  background-image: url(../img/boarding-img.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.team-wrapper {
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.team-wrapper h3 {
+  color: #616089;
+}
+.tw-1 {
+  flex: 5;
+}
+.tw-2 {
+  flex: 4;
+}
+.team-container {
+  flex-direction: column;
+  justify-content: center;
+}
+.about-container .intro h1 {
+  text-align: center;
+}
+#kathi,
+#dom,
+#owners {
+  text-align: center;
+}
+.kathi-img,
+.dom-img,
+.owners-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: tan;
+  margin: 15px auto;
+}
+.kathi-img {
+  background-image: url(../img/kathi-profile.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.dom-img {
+  background-image: url(../img/dom-profile.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.owners-img {
+  background-image: url(../img/owners-photo.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.subtext {
+  font-size: .9em;
+  text-transform: lowercase;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 5px;
+  line-height: .4;
+}
+.bio h3,
+.bio .subtext {
+  text-align: center;
+}
+.contact-container h1 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+
+.flex-1 {
+ flex: 1;
+ padding: 10px;
+}
+.flex-2 {
+  flex: 2;
+  padding: 10px;
+}
+.flex-3 {
+  flex: 3;
+  padding: 10px;
+}
+
+.inline-divider {
+  border-top: 3px solid #e0dabc;
+  margin: 25px;
+}
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\
+        G A L L E R Y
+/////////////////////////// */
+.gallery-wrapper {
+  flex-direction: column;
+  padding-bottom: 75px;
+  align-items: center;
+}
+.gallery-wrapper h3 {
+  color: #616089;
+}
+.gallery-container {
+  flex-direction: column;
+}
+.highlight {
+  text-align: center;
+}
+.highlight-photo {
+  margin: auto;
+}
+.highlight-photo img {
+  border-radius: 10px;
+  height: 200px;
+}
+.highlight h2,
+.highlight .caption {
+  margin: 0;
+}
+.highlight .caption {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+.highlight h2,
+.highlight p {
+  align-self: flex-start;
+}
+.photo-group {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo-group img {
+  height: 75px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\
+   M E D I A   Q U E R I E S
+/////////////////////////// */
+@media (min-height: 600px) {
+  .slide-1 div,
+  .slide-2 div,
+  .slide-3 div {
+    background-size: auto 720px;
+  }
+}
+@media (min-height: 800px) {
+  .slide-1 div,
+  .slide-2 div,
+  .slide-3 div {
+    background-size: auto 100%;
+  }
+}
+
+
+@media (min-width: 350px) {
+  .header-image {
+    height: 200px;
+  }
+}
+@media (min-width: 600px) {
+  .main-header {
+    justify-content: space-around;
+  }
+  .logo-container {
+    flex-grow: 6;
+  }
+  .slide-1 div,
+  .slide-2 div,
+  .slide-3 div {
+    background-size: auto 100%;
+  }
+  .header-image {
+    height: 250px;
+  }
+  .header-image--services {
+    height: 250px;
+  }
+  .facilities-container .amenities {
+    flex: 1;
+  }
+  .facilities-container .intro {
+    flex: 2;
+  }
+  .team-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+  .kathi-img,
+  .dom-img,
+  .owners-img {
+    margin: 15px;
+    width: 175px;
+    height: 175px;
+  }
+  .kathi,
+  .dom {
+    flex: 4;
+  }
+  .bio {
+    padding: 80px 0 0 15px;
+  }
+  .bio h3,
+  .bio .subtext {
+    text-align: left;
+  }
+  body {
+    overflow: auto;
+  }
+  footer {
+    display: block;
+    position: static;
+  }
+  p {
+    font-size: .9em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .subtext {
+    font-size: .7em;
+  }
+  .amenities ul {
+    font-size: .9em
+  }
+  .about-container .intro h1 {
+    text-align: left;
+  }
+  .gallery-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .highlight-photo {
+    margin: 5px;
+  }
+  .photo-group {
+    margin-left: 20px;
+    justify-content: flex-start;
+  }
+  .photo-group img {
+    height: 95px;
+  }
+}
+@media (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+  #menu {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+  }
+  #menu ul {
+    display: flex;
+    text-align: center;
+    margin: 0px 20px;
+  }
+  #menu ul li {
+    flex: 1 auto;
+    padding: 0;
+    font-size: .8rem;
+  }
+  #menu ul li a {
+    border: none;
+    padding: 0 5px;
+  }
+  #menu ul {
+    margin: 0px auto;
+    max-width: 800px;
+  }
+  #menu ul li a {
+    font-size: .9rem;
+  }
+  .main-header {
+    flex-direction: column;
+  }
+  .slide-2 div {
+    background-size: 100% auto;
+  }
+  .header-image {
+    height: 300px;
+  }
+  .lessons-img,
+  .boarding-img {
+    width: 175px;
+    height: 175px;
+  }
+  .services-container {
+    flex-direction: row;
+  }
+  #lessons,
+  #boarding {
+    flex: none;
+    width: 45%;
+  }
+  .kathi-img,
+  .dom-img,
+  .owners {
+
+  }
+  .highlight-photo img {
+    height: 210px;
+  }
+  .photo-group {
+    justify-content: flex-start;
+    align-content: center;
+  }
+  .photo-group img {
+    height: 100px;
+  }
+  .page-container {
+    width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  #menu {
+    width: 100%;
+  }
+  #menu ul {
+    margin: 0px auto;
+  }
+  #menu ul li {
+    padding: inherit 15px;
+  }
+  #menu ul li a {
+    font-size: .9rem;
+  }
+  .slide-1 div,
+  .slide-3 div {
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  .slide-2 div {
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  .header-image {
+    height: 350px;
+  }
+  .header-image--facilities {
+    background-image: url('../img/facilities-photo.jpg');
+  }
+  .lessons-img,
+  .boarding-img {
+    width: 225px;
+    height: 225px;
+  }
+  .page-container {
+    width: 70%;
+  }
+  .facilities-container {
+    flex-direction: row;
+  }
+  .amenities {
+    text-align: left;
+    margin-top: 62px;
+  }
+  .amenities h3 {
+    text-align: left;
+    margin-left: 12px;
+  }
+  .inline-divider {
+    margin: 25px 0;
+  }
+  .facilities-img {
+    width: 70%;
+    max-width: none;
+  }
+  .kathi-img,
+  .dom-img,
+  .owners-img {
+    width: 225px;
+    height: 225px;
+  }
+  .highlight-photo img {
+    height: 250px;
+  }
+  .photo-group img {
+    height: 120px;
+  }
+  .photo-group {
+    justify-content: flex-start;
+    align-content: center;
+  }
+}
+@media (min-width: 1300px) {
+  .team-container {
+    flex-direction: row;
+    align-content: flex-start;
+  }
+  .team-wrapper {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .tw-1,
+  .tw-2 {
+    align-self: flex-start;
+  }
+  .tw-1 {
+    flex: 5;
+    margin-right: 75px;
+  }
+  .tw-2 {
+    flex: 3;
+  }
+  .tw-3 {
+    flex: 2;
+    width: 60%;
+    margin: auto;
+    flex-direction: row;
+  }
+  .tw-3 .bio {
+    padding-left: 25px;
+    align-self: center;
+  }
+  .bio {
+    padding: 0 10px;
+  }
+  .about-container {
+    width: 85%;
+  }
+  #kathi,
+  #dom,
+  #owners {
+    flex: 1;
+  }
+  .kathi-img,
+  .dom-img,
+  .owners-img {
+    margin: 10px auto;
+  }
+  .tw-1 h3,
+  .tw-1 .subtext,
+  .tw-2 h3,
+  .tw-2 .subtext {
+    text-align: center;
+  }
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body class="home-body">
+    <header class="main-header flex">
+      <div class="logo-container">
+        <div class="logo">
+          <a src="index.html"><img src=""></a>
+        </div>
+      </div>
+      <div id="menu-button">
+        <div id="line-1"></div>
+        <div id="line-2"></div>
+        <div id="line-3"></div>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <!-- <li><a href="shop.html">Shop</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-cover slick">
+        <div class="slide slide-1">
+          <div></div>
+        </div>
+        <div class="slide slide-2">
+          <div></div>
+        </div>
+        <div class="slide slide-3">
+          <div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick').slick({
+        autoplay: true,
+        autoplaySpeed: 7500,
+        fade: true,
+        arrows: false,
+        fade: true,
+        cssEase: 'linear'
+      });
+      $('.carousel-content').slick({
+      prevArrow:"<img class='a-left control-c prev slick-prev' src='img/left-arrow.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='img/right-arrow.png'>"
+      });
+    });
+    </script>
+  </body>
+
+</html>
